@@ -1,0 +1,61 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33122.133
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "WinCSharp", "..\..\..\Git_Projects\WingsCSharp\WingsCSharp\WinCSharp\WinCSharp.shproj", "{3B1EF1A5-663B-4309-B69D-8F055A3998AC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MiniLauncher_WPF", "MiniLauncher_WPF\MiniLauncher_WPF.csproj", "{DAAAB60E-A8AE-41EB-A933-D4807AC2F636}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MainUpdate", "MainUpdate\MainUpdate.csproj", "{2D4B1B36-9DF0-4736-99BA-060252A0550C}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "UpdateChecker", "UpdateChecker\UpdateChecker.shproj", "{1CAA19C0-D9CE-4B1F-A835-AF7632C2E65B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UpdateCheckerLib", "UpdateCheckerLib\UpdateCheckerLib.csproj", "{AD444823-2363-4E3F-9F0B-956B46BF8F93}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibHome", "LibHome\LibHome.csproj", "{8E4B935F-6307-44E3-B897-39FDF3111898}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MaxPluginManager", "MaxPluginManager\MaxPluginManager.csproj", "{5E319D19-69B4-448A-B325-E157016FF9E5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DAAAB60E-A8AE-41EB-A933-D4807AC2F636}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DAAAB60E-A8AE-41EB-A933-D4807AC2F636}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DAAAB60E-A8AE-41EB-A933-D4807AC2F636}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DAAAB60E-A8AE-41EB-A933-D4807AC2F636}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2D4B1B36-9DF0-4736-99BA-060252A0550C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2D4B1B36-9DF0-4736-99BA-060252A0550C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2D4B1B36-9DF0-4736-99BA-060252A0550C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2D4B1B36-9DF0-4736-99BA-060252A0550C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AD444823-2363-4E3F-9F0B-956B46BF8F93}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD444823-2363-4E3F-9F0B-956B46BF8F93}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD444823-2363-4E3F-9F0B-956B46BF8F93}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD444823-2363-4E3F-9F0B-956B46BF8F93}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8E4B935F-6307-44E3-B897-39FDF3111898}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E4B935F-6307-44E3-B897-39FDF3111898}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E4B935F-6307-44E3-B897-39FDF3111898}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E4B935F-6307-44E3-B897-39FDF3111898}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5E319D19-69B4-448A-B325-E157016FF9E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E319D19-69B4-448A-B325-E157016FF9E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E319D19-69B4-448A-B325-E157016FF9E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E319D19-69B4-448A-B325-E157016FF9E5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {67AE4EC9-7991-4D14-8068-FA761B28E9F4}
+	EndGlobalSection
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		UpdateChecker\UpdateChecker.projitems*{1caa19c0-d9ce-4b1f-a835-af7632c2e65b}*SharedItemsImports = 13
+		UpdateChecker\UpdateChecker.projitems*{2d4b1b36-9df0-4736-99ba-060252a0550c}*SharedItemsImports = 4
+		..\..\..\Git_Projects\WingsCSharp\WingsCSharp\WinCSharp\WinCSharp.projitems*{3b1ef1a5-663b-4309-b69d-8f055a3998ac}*SharedItemsImports = 13
+		UpdateChecker\UpdateChecker.projitems*{5e319d19-69b4-448a-b325-e157016ff9e5}*SharedItemsImports = 4
+		UpdateChecker\UpdateChecker.projitems*{daaab60e-a8ae-41eb-a933-d4807ac2f636}*SharedItemsImports = 4
+		..\..\..\Git_Projects\WingsCSharp\WingsCSharp\WinCSharp\WinCSharp.projitems*{daaab60e-a8ae-41eb-a933-d4807ac2f636}*SharedItemsImports = 4
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,38 @@
+﻿<Window x:Class="WingsTools.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        xmlns:local="clr-namespace:WingsTools"
+        WindowStartupLocation="CenterScreen"
+        ContentRendered="Window_ContentRendered"
+        Title="Wings Tools Launcher" Height="576" Width="1080" Icon="/icon.ico">
+    <Grid>
+        <TextBlock Name="VersionText" d:Text="0.0.0.0" VerticalAlignment="Bottom" HorizontalAlignment="Right" FontSize="20" Foreground="Black" Margin="0, 0, 5, 0"/>
+
+        <ListBox Name ="BtnList" Margin="0,0,280,100" >
+            <!--<ListBox.ItemTemplate>
+                <DataTemplate>
+                    <WrapPanel>
+                        <Button Content="{Binding Text}" Click="{Binding ClickEvent}" Height="60" FontSize="28" FontWeight="Bold" Foreground="#DDFFFFFF" VerticalAlignment="Top" HorizontalAlignment="Left" MinWidth="150" Background="#FFFF9700"/>
+                    </WrapPanel>
+                </DataTemplate>
+            </ListBox.ItemTemplate>-->
+
+            <ListBoxItem>
+                <Button Name="BtnDatabase" Content="数据库主页" Click="BtnDatabaseHomeClick" Height="60" FontSize="28" FontWeight="Bold" Foreground="#DDFFFFFF" VerticalAlignment="Top" HorizontalAlignment="Left" Width="200" Background="#FFFF9700"/>
+            </ListBoxItem>
+            <ListBoxItem>
+                <Button Name="BtnLibManager" Content="数据库上传工具" Click="BtnLibManagerClick" Height="60" FontSize="28" FontWeight="Bold" Foreground="#DDFFFFFF" VerticalAlignment="Top" HorizontalAlignment="Left" Width="200" Background="#FFFF9700"/>
+            </ListBoxItem>
+            <ListBoxItem>
+                <Button Name="BtnMaxPlugin" Content="Max插件" Click="BtnMaxPluginClick" Height="60" FontSize="28" FontWeight="Bold" Foreground="#555" VerticalAlignment="Top" HorizontalAlignment="Left" Width="200" Background="#FFFF9700" IsEnabled="False"/>
+            </ListBoxItem>
+            <ListBoxItem>
+                <Button Name="BtnSetupChrome" Content="Chrome更新" Click="BtnSetupChromeClick" Height="60" FontSize="28" FontWeight="Bold" Foreground="#DDFFFFFF" VerticalAlignment="Top" HorizontalAlignment="Left" Width="200" Background="#FFFF9700"/>
+            </ListBoxItem>
+        </ListBox>
+           <ProgressBar Name="PBUpdate" HorizontalAlignment="Left" Width="800" VerticalAlignment="Bottom" Margin="0,0,0,50"  Height="50"/>
+    </Grid>
+</Window>
