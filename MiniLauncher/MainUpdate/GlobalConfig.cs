@@ -10,8 +10,8 @@ namespace MainUpdate
     public class GlobalConfig
     {
 
-        public static string URLGameVersionCheck = "http://192.168.10.7/assets/tools/launcher/version.txt";
-        public static string URLGamePackage = "http://192.168.10.7/assets/tools/launcher/WingsTools.zip";
+        public static string URLGameVersionCheck = "http://192.168.10.11/assets/tools/launcher/version.txt";
+        public static string URLGamePackage = "http://192.168.10.11/assets/tools/launcher/WingsTools.zip";
 
         public static string InstallPath = Path.Combine(Directory.GetCurrentDirectory(), "launcher");
         public static string VersionFile = Path.Combine(InstallPath, "LauncherVersion.txt");

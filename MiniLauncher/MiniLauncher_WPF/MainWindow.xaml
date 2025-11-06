@@ -32,6 +32,9 @@
             <ListBoxItem>
                 <Button Name="BtnSetupChrome" Content="Chrome更新" Click="BtnSetupChromeClick" Height="60" FontSize="28" FontWeight="Bold" Foreground="#DDFFFFFF" VerticalAlignment="Top" HorizontalAlignment="Left" Width="200" Background="#FFFF9700"/>
             </ListBoxItem>
+            <ListBoxItem>
+                <Button Name="BtnMayaProtected" Content="Maya防护" Click="BtnMayaProtectedClick" Height="60" FontSize="28" FontWeight="Bold" Foreground="#DDFFFFFF" VerticalAlignment="Top" HorizontalAlignment="Left" Width="200" Background="#FFFF9700"/>
+            </ListBoxItem>
         </ListBox>
            <ProgressBar Name="PBUpdate" HorizontalAlignment="Left" Width="800" VerticalAlignment="Bottom" Margin="0,0,0,50"  Height="50"/>
     </Grid>

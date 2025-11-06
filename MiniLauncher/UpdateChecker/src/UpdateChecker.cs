@@ -35,6 +35,7 @@ namespace WingsTools
         public Action<UpdateChecker> OnDonwloadCompelete = null;
         public Action<UpdateChecker,int> OnDonwloading = null;
         public Action<UpdateChecker> OnUpdateCompelete = null;
+        public Action<Exception> OnError = null;
 
         protected string _TempFullFilePath;
 
@@ -69,6 +70,7 @@ namespace WingsTools
             }
             catch (Exception err)
             {
+                OnError?.Invoke(err);
             }
         }
 
@@ -83,6 +85,7 @@ namespace WingsTools
             }
             catch (Exception err)
             {
+                OnError?.Invoke(err);
             }
         }
 
@@ -107,6 +110,7 @@ namespace WingsTools
             }
             catch (Exception err)
             {
+                OnError?.Invoke(err);
             }
         }
 

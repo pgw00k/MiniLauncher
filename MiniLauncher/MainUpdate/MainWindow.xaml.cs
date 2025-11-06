@@ -4,6 +4,7 @@ using System.Diagnostics;
 using System.Windows;
 using System.Windows.Shapes;
 using WingsTools;
+using System.Threading;
 
 namespace MainUpdate
 {
@@ -12,6 +13,7 @@ namespace MainUpdate
     /// </summary>
     public partial class MainWindow : Window
     {
+        public string OnlineVersion = "";
         public MainWindow()
         {
             InitializeComponent();
@@ -41,15 +43,22 @@ namespace MainUpdate
         {
             if (File.Exists(GlobalConfig.MainExe))
             {
-
+                OnlineVersion = uc.OnlineVersion.ToString();
                 File.WriteAllText(GlobalConfig.VersionFile, uc.OnlineVersion.ToString());
-                ProcessStartInfo startInfo = new ProcessStartInfo(GlobalConfig.MainExe);
-                startInfo.WorkingDirectory = GlobalConfig.InstallPath;
-                Process.Start(GlobalConfig.MainExe);
+                Thread NewThread = new Thread(this.StatrMainExe);
+                NewThread.Start();
             }
 
 
             this.Close();
+        }
+
+        protected virtual void StatrMainExe()
+        {   
+            Thread.Sleep(1000);
+            ProcessStartInfo startInfo = new ProcessStartInfo(GlobalConfig.MainExe);
+            startInfo.WorkingDirectory = GlobalConfig.InstallPath;
+            Process.Start(GlobalConfig.MainExe);
         }
     }
 }

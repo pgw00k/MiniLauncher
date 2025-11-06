@@ -14,7 +14,7 @@ namespace WingsTools
 {
     public class ProcessEntry
     {
-        public static string URLDoMain = "http://192.168.10.7/assets/tools";
+        public static string URLDoMain = "http://192.168.10.11/assets/tools";
 
         public static string InstallRoot = "";
 
@@ -37,7 +37,8 @@ namespace WingsTools
             new ProcessEntry("AdiaLibManagerTool"),
             new ProcessEntry("LibHome"),
             new ProcessEntry("MaxPluginManager"),
-            new ProcessEntry("ChromeStandaloneSetup64")
+            new ProcessEntry("ChromeStandaloneSetup64"),
+            new ProcessEntry("MayaProtectedManager")
         };
     }
 
@@ -70,6 +71,11 @@ namespace WingsTools
             UpdateTarget(3);
         }
 
+        public virtual void BtnMayaProtectedClick(object sender, RoutedEventArgs e)
+        {
+            UpdateTarget(4);
+        }
+
         public virtual void UpdateTarget(int index = 0)
         {
 
@@ -93,6 +99,7 @@ namespace WingsTools
 
             uc.OnDonwloading += OnDownloading;
             uc.OnUpdateCompelete += OnUpdateCompelete;
+            uc.OnError += OnUpdateError;
             uc.Update();
         }
 
@@ -117,6 +124,12 @@ namespace WingsTools
 
             CurrentIndex = -1;
             this.Close();
+        }
+
+        protected virtual void OnUpdateError(Exception err)
+        {
+            CurrentIndex = -1;
+            MessageBox.Show($"更新失败：{err.Message}");
         }
     }
 }

@@ -16,15 +16,15 @@ namespace MainUpdate
     {
         protected override void OnStartup(StartupEventArgs e)
         {
-            //IntPtr hwnd = WINAPI.Win32.FindWindow(null, "Wings Tools Launcher");
+            IntPtr hwnd = WINAPI.Win32.FindWindow(null, "Wings Tools Launcher");
 
 
-            //if (hwnd != (IntPtr)0)
-            //{
-            //    WINAPI.Win32.PostMessage(hwnd, WINAPI.WinMsg.WM_QUIT, (IntPtr)1, (IntPtr)0);
-            //}
+            if (hwnd != (IntPtr)0)
+            {
+                WINAPI.Win32.PostMessage(hwnd, WINAPI.WinMsg.WM_QUIT, (IntPtr)1, (IntPtr)0);
+            }
 
-            Process.Start("cmd.exe", "/C taskkill /f /im WingsTools.exe");
+            //Process.Start("cmd.exe", "/C taskkill /f /im WingsTools.exe");
         }
     }
 }
